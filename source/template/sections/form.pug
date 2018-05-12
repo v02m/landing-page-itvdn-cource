@@ -14,8 +14,8 @@ section.form-section
                     Et ex enim enim officia. Est voluptate excepteur id exercitation officia pariatur dolor veniam.
 
                 .form__fields
-                    input.form__input(type="text" placeholder="Your Name")
-                    input.form__input(type="text" placeholder="Contact Number")
-                    input.form__input(type="text" placeholder="Contact Name")
+                    input.form__input(type="text" placeholder="Your Name" data-valid="required")
+                    input.form__input(type="email" placeholder="Email" data-valid="required" data-email)
+                    input.form__input(type="text" placeholder="Contact Number" data-valid="required" data-number)
 
                 button(type="submit").button.button--red.button--text-uppercase Submit now
