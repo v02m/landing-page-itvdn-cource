@@ -3,6 +3,11 @@
     background-color: #de2b24;
     color: #fff;
 
+    @media (max-width: 985px) {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
     &__list {
         display: flex;
         flex-wrap: wrap;
@@ -23,10 +28,19 @@
         color: #ffffff;
         background: #f35e59;
 
+        @media (max-width: 400px) {
+            width: 320px;
+            height: 320px;
+        }
+
         &--name {
             position: relative;
             padding: 130px 40px 75px 40px;
             text-align: center;
+
+            @media (max-width: 400px) {
+                height: 260px;
+            }
 
             &:before {
                 @include sprite($work-item);
